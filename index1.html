@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TIN HỌC VĂN PHÒNG</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .tieude{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .tieude span{
+            color: #38bdf8;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #38bdf8;
+        }
+        .trangchu {
+            min-height: 550px;
+            padding: 80px 7%;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            align-items: center;
+            gap: 50px;
+        }
+        .trangchu h1 {
+            font-size: 60px;
+            line-height: 1.1;
+            color: #0f172a;
+            margin: 15px 0;
+        }
+        .trangchu h1 span {
+            color: #2563eb;
+        }
+        .trangchu p {
+            font-size: 19px;
+            color: #475569;
+            max-width: 650px;
+        }
+        .bđ {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .bđ:hover {
+            background: #1d4ed8;
+            color: yellow;
+        }       
+        section {
+            padding: 70px 7%;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .title h2 {
+            font-size: 36px;
+            color: #0f172a;
+        }
+        .bang {
+            display: grid;
+            grid-template-columns:auto auto auto;
+            gap: 25px;
+        }
+        .n {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow:0 8px 25px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+        .n:hover {
+            transform: translateY(-15px);
+        }
+        .n h3 {
+            color: #2563eb;
+            margin: 10px 0;
+        }
+        .noidung {
+            width: 900px;
+            margin: auto;
+            background: #0b1120;
+            color: white;
+            padding: 30px;
+            }
+        #tailieu{
+            color:blue;
+            text-decoration: none;
+            margin-right:auto ;
+            text-align: right;
+        }
+        .anh {
+            display: grid;
+            grid-template-columns:
+            repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .anh img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+        .anh img:hover {
+            transform: scale(1.2);
+        }
+        .video {
+            width: 720px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 18px;
+        }
+        .video img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0px 5px 10px gray;
+        }
+        .btvn {
+            color: white;
+            width: 1200px;
+            margin: auto;
+            background: black;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow:0 5px 20px black;
+        }    
+        footer {
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="tieude">
+        TIN HỌC <span>VĂN PHÒNG</span>
+    </div>
+    <nav>
+        <a href="#trangchu">Trang chủ</a>
+        <a href="#baihoc">Bài học</a>
+        <a href="#lythuyet">Lý thuyết</a>
+        <a href="#hinhanh">Hình ảnh</a>
+        <a href="#video">Video</a>
+        <a href="#baitap">Bài tập</a>
+    </nav>
+</header>
+<section class="trangchu" id="trangchu">
+    <div>
+        <p>TIN HỌC VĂN PHÒNG</p>
+        <h1>
+            Học <span>TIN HỌC</span>
+            <br>
+            thật dễ dàng
+        </h1>
+        <p>
+            Tin học văn phòng dành cho học sinh,
+            sinh viên. Học từ cơ bản đến nâng cao
+            thông qua lí thuyết và bài tập.
+        </p>
+        <a href="#baihoc" class="bđ">
+            Bắt đầu học
+        </a>
+    </div>
+</section>
+<section id="baihoc">
+    <div class="title">
+        <h2>
+            Lộ trình học Tin học
+        </h2>
+    </div>
+    <div class="bang">
+        <div class="n">
+            <h3>
+                Tin học văn phòng cơ bản
+            </h3>
+            <p>
+                - Tìm hiểu tin học là gì, phím tắt cơ bản của tin học
+                văn phòng?
+            </p>
+        </div>
+        <div class="n">
+            <h3>
+                Ứng dụng
+            </h3>
+            <p>
+                - Tìm hiểu Word, Excel, PowerPoint
+                và các chức năng phổ biến.
+            </p>
+        </div>
+        <div class="n">
+            <h3>
+                Word
+            </h3>
+            <p>
+                - Tìm hiểu word, phím tắt trong word,
+                văn bản và thuộc tính.
+            </p>
+        </div>
+        <div class="n">
+            <h3>
+                Excel
+            </h3>
+            <p>
+                - Căn chỉnh cột dòng trong Excel và những 
+                hàm trong Excel.
+            </p>
+        </div>
+        <div class="n">
+            <h3>
+                PowerPoint
+            </h3>
+            <p>
+                - Tạo bố cục trình chiếu và chức năng
+                trong PowerPoint.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="lythuyet">
+    <div class="title">
+        <h2>
+            Lý thuyết tin học văn phòng
+        </h2>
+    </div>
+    <div class="noidung">
+        <div>
+            1. Tin học văn phòng là gì? 
+            <br>- Tin học văn phòng là một kỹ năng quan trọng để làm việc trên máy vi tính. 
+            Nó bao gồm các kỹ năng như kỹ năng sử dụng máy tính, các phần mềm tiện ích để làm việc gồm có phần mềm soạn thảo văn bản Word; phần mềm bảng tính Excel; phần mềm thuyết trình Powerpoint.
+            Đây cũng là 3 ứng dụng phần mềm tin học văn phòng trên máy tính cơ bản được sử dụng rộng rãi. Ngày nay thì kỹ năng Tin học văn phòng Word, Excel, Powerpoint là một KỸ NĂNG KHÔNG THỂ THIẾU nơi công sở.
+            <br>
+            2. Kiến thức về bộ phần mềm Microsoft Office?
+            <br>- Microsoft Word là công cụ soạn thảo văn bản phổ biến hiện nay, nó cho phép người dùng tạo văn bản bằng chữ, trình bày trang trí về phông chữ, màu sắc, đồ họa, hiệu ứng âm thanh, video,…
+            Bên cạnh nó còn có công cụ kiểm tra chính tả, ngữ pháp nhiều ngôn ngữ để hỗ trợ người dùng. Word có nhiều bản theo các năm cập nhật, nó lưu tệp tin với đuôi .doc.
+        </div>
+        <a id="tailieu" href="../tailieu/tailieu.pdf" download>Tải tài liệu lý thuyết</a>
+    </div>
+</section>
+<section id="hinhanh">
+    <div class="title">
+        <h2>
+            Thư viện hình ảnh Tin học
+        </h2>
+    </div>
+    <div class="anh">
+        <img src="../img/anh1" alt="ứng dụng">
+        <img src="../img/anh2" alt="tin học">
+        <img src="../img/anh3" alt="máy tính">
+    </div>
+</section>
+<section id="video">
+    <div class="title">
+        <h2>
+             Video học Tin học
+        </h2>    
+    </div>
+    <div class="video">
+        <a href="https://youtu.be/kEQSq-zQias?si=hKSMZ2LZeiAwFP_C"><img src="../img/anh4" alt=""></a>
+    </div>
+</section>
+<section id="baitap">
+    <div class="title">
+        <h2>
+                Bài tập về nhà
+        </h2>
+    </div>
+    <div class="btvn">
+        <p>Câu 1. Trình bày khái niệm Tin học văn phòng. 
+        Hãy nêu vai trò của Tin học văn phòng trong học tập và công việc?</p>
+        <p>Câu 2: Microsoft Word là gì? 
+        Hãy trình bày các chức năng cơ bản của Microsoft Word và cho biết cách định dạng một đoạn văn bản?</p>
+        <p>Câu 3. Trình bày cách tạo, lưu, mở và in một văn bản trong Microsoft Word. 
+        Nêu một số định dạng tệp phổ biến của Word?</p>
+        <p>Câu 4. Hãy trình bày cách chèn và định dạng bảng (Table) trong Microsoft Word. 
+        Nêu các thao tác có thể thực hiện đối với một bảng?</p>
+        <p>Câu 5. Microsoft Excel là gì?
+        Hãy trình bày cấu trúc của một bảng tính Excel và phân biệt ô, hàng, cột và trang tính?</p>
+        <p>Câu 6. Trình bày cách sử dụng các hàm SUM, AVERAGE, MAX, MIN và COUNT trong Microsoft Excel. 
+        Cho ví dụ minh họa cho từng hàm?</p>
+        <p>Câu 7. Hãy giải thích khái niệm địa chỉ ô tương đối và địa chỉ ô tuyệt đối trong Excel. 
+        Cho ví dụ và nêu trường hợp sử dụng của từng loại?</p>
+        <p>Câu 8. Microsoft PowerPoint là gì? 
+        Hãy trình bày các bước cơ bản để tạo một bài thuyết trình bằng PowerPoint?</p>
+        <p>Câu 9. Trình bày cách chèn hình ảnh, âm thanh, video và hiệu ứng chuyển slide trong Microsoft PowerPoint. 
+        Theo em, cần lưu ý gì để bài thuyết trình dễ theo dõi?</p>
+        <p>Câu 10. Hãy nêu các nguyên tắc cơ bản để bảo đảm an toàn và bảo mật thông tin khi sử dụng máy tính 
+        và Internet trong môi trường văn phòng?</p>
+    </div>
+</section>
+<footer>
+    <div>
+        Thông tin liên hệ : Nguyễn Thanh Thái 
+        <br>SĐT : 0345649219
+        <br>Địa chỉ : Ấp Tân Thạnh, Xã tân Long, Tỉnh Đồng tháp
+
+    </div>
+    <p>
+        Phát triển bởi <a href="">Công Ty trách nhiệm hữu hạn</a>
+    </p>
+</footer>
+</body>
+</html>
