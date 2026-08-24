@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TIN HỌC VĂN PHÒNG</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .tieude{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .tieude span{
+            color: #38bdf8;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #38bdf8;
+        }
+        .trangchu {
+            height: 550px;
+            padding: 80px 7%;
+            display: grid;
+            align-items: center;
+            gap: 50px;
+        }
+        .trangchu h1 {
+            font-size: 60px;
+            line-height: 1.1;
+            color: #0f172a;
+            margin: 15px 0;
+        }
+        .trangchu h1 span {
+            color: #2563eb;
+        }
+        .trangchu p {
+            font-size: 19px;
+            color: #475569;
+            width: 650px;
+        }
+        .bđ {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .bđ:hover {
+            background: #1d4ed8;
+            color: yellow;
+        }       
+        section {
+            padding: 70px 7%;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .title h2 {
+            font-size: 36px;
+            color: #0f172a;
+        }
+        .anh {
+            display: grid;
+            grid-template-columns:auto auto auto;
+            gap: 20px;
+            
+        }
+        .anh img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+        .anh img:hover {
+            transform: scale(1.2);
+        }  
+        footer {
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="tieude">
+        TIN HỌC <span>VĂN PHÒNG</span>
+    </div>
+    <nav>
+       <a href="./html/index.html" target="_blank">Đăng nhập</a>
+        <a href="./baihoc.html">Bài học</a>
+        <a href="./lythuyet.html" target="_blank">Lý thuyết</a>
+        <a href="#">Hình ảnh</a>
+        <a href="./vide.html" target="_blank">Video</a>
+        <a href="./baitap.html" target="_blank">Bài tập</a>
+    </nav>
+</header>
+<section id="hinhanh">
+    <div class="title">
+        <h2>
+            Thư viện hình ảnh Tin học
+        </h2>
+    </div>
+    <div class="anh">
+        <a href="https://www.tinhoc123.net/"><img src="./img/anh1" alt=""></a>
+        <a href="http://hoc.trungtamtinhoc.edu.vn/"><img src="./img/anh2" alt=""></a>
+        <a href="http://tinhocvp.blogspot.com/"><img src="./img/anh3" alt=""></a>
+        <a href="https://tinhocvanphong.edu.vn/"><img src="./img/anh5" alt=""></a>
+        <a href="https://webkynang.vn/"><img src="./img/anh6" alt=""></a>
+        <a href="https://codestar.vn/product/khoa-hoc-tin-hoc-van-phong-microsoft/"><img src="./img/anh7" alt=""></a>
+    </div>
+</section>
+<footer>
+    <div>
+        Thông tin liên hệ : Nguyễn Thanh Thái 
+        <br>SĐT : 0345649219
+        <br>Địa chỉ : Ấp Tân Thạnh, Xã tân Long, Tỉnh Đồng tháp
+
+    </div>
+    <p>
+        Phát triển bởi <a href="">Công Ty trách nhiệm hữu hạn</a>
+    </p>
+</footer>
+</body>
+</html>

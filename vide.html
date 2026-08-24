@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TIN HỌC VĂN PHÒNG</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .tieude{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .tieude span{
+            color: #38bdf8;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #38bdf8;
+        }     
+        section {
+            padding: 70px 7%;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .title h2 {
+            font-size: 36px;
+            color: #0f172a;
+        }
+        .video {
+            width: 720px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 18px;
+            grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+        }
+        .video img {
+            width: 80%;
+            aspect-ratio: 16 / 9;
+            border-radius: 12px;
+            box-shadow: 0px 5px 10px gray;
+        }   
+        footer {
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="tieude">
+        TIN HỌC <span>VĂN PHÒNG</span>
+    </div>
+    <nav>
+        <a href="./html/index.html" target="_blank">Đăng nhập</a>
+        <a href="./baihoc.html" target="_blank">Bài học</a>
+        <a href="./lythuyet.html" target="_blank">Lý thuyết</a>
+        <a href="./webcon/hinhanh.html" target="_blank">Hình ảnh</a>
+        <a href="./vide.html">Video</a>
+        <a href="./baitap.html" target="_blank">Bài tập</a>
+    </nav>
+</header>
+<section class="video">
+    <div class="title">
+        <h2>
+             Video học Tin học
+        </h2>    
+    </div>
+    <div class="video">
+        <a href="https://youtu.be/kEQSq-zQias?si=hKSMZ2LZeiAwFP_C"><img src="./img/anh4" alt=""></a>
+        <a href="https://youtu.be/oVvV6HvAKc8?si=CRfEV65uVdVL9_dG"><img src="./img/anh8" alt=""></a>
+        <a href="https://youtu.be/9gPJtkthTYs?si=nb9_7CMiBbOw43f7"><img src="./img/anh9" alt=""></a>
+    </div>
+</section>
+<footer>
+    <div>
+        Thông tin liên hệ : Nguyễn Thanh Thái 
+        <br>SĐT : 0345649219
+        <br>Địa chỉ : Ấp Tân Thạnh, Xã tân Long, Tỉnh Đồng tháp
+
+    </div>
+    <p>
+        Phát triển bởi <a href="">Công Ty trách nhiệm hữu hạn</a>
+    </p>
+</footer>
+</body>
+</html>

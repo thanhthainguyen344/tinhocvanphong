@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TIN HỌC VĂN PHÒNG</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .tieude{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .tieude span{
+            color: #38bdf8;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #38bdf8;
+        }             
+        section {
+            padding: 70px 7%;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .title h2 {
+            font-size: 36px;
+            color: #0f172a;
+        }
+        .bang {
+            display: grid;
+            grid-template-columns:auto auto auto;
+            gap: 25px;
+        }
+        .n {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow:0 8px 25px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+        .n:hover {
+            transform: translateY(-15px);
+        }
+        .n h3 {
+            color: #2563eb;
+            margin: 10px 0;
+        }   
+        footer {
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="tieude">
+        TIN HỌC <span>VĂN PHÒNG</span>
+    </div>
+    <nav>
+        <a href="./html/index.html" target="_blank">Đăng nhập</a>
+        <a href="#">Bài học</a>
+        <a href="./lythuyet.html" target="_blank">Lý thuyết</a>
+        <a href="./webcon/hinhanh.html" target="_blank">Hình ảnh</a>
+        <a href="./vide.html" target="_blank">Video</a>
+        <a href="./baitap.html" target="_blank">Bài tập</a>
+    </nav>
+</header>
+<section id="baihoc">
+    <div class="title">
+        <h2>
+            Lộ trình học Tin học
+        </h2>
+    </div>
+    <div class="bang">
+        <div class="n">
+            <h3>
+                Tin học văn phòng cơ bản
+            </h3>
+            <p>
+                - Tìm hiểu tin học là gì, phím tắt cơ bản của tin học
+                văn phòng?
+            </p>
+        </div>
+        <div class="n">
+            <h3>
+                Ứng dụng
+            </h3>
+            <p>
+                - Tìm hiểu Word, Excel, PowerPoint
+                và các chức năng phổ biến.
+            </p>
+        </div>
+        <div class="n">
+            <h3>
+                Word
+            </h3>
+            <p>
+                - Tìm hiểu word, phím tắt trong word,
+                văn bản và thuộc tính.
+            </p>
+        </div>
+        <div class="n">
+            <h3>
+                Excel
+            </h3>
+            <p>
+                - Căn chỉnh cột dòng trong Excel và những 
+                hàm trong Excel.
+            </p>
+        </div>
+        <div class="n">
+            <h3>
+                PowerPoint
+            </h3>
+            <p>
+                - Tạo bố cục trình chiếu và chức năng
+                trong PowerPoint.
+            </p>
+        </div>
+    </div>
+</section>
+<footer>
+    <div>
+        Thông tin liên hệ : Nguyễn Thanh Thái 
+        <br>SĐT : 0345649219
+        <br>Địa chỉ : Ấp Tân Thạnh, Xã tân Long, Tỉnh Đồng tháp
+
+    </div>
+    <p>
+        Phát triển bởi <a href="">Công Ty trách nhiệm hữu hạn</a>
+    </p>
+</footer>
+</body>
+</html>

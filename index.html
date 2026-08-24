@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TIN HỌC VĂN PHÒNG</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .tieude{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .tieude span{
+            color: #38bdf8;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #38bdf8;
+        }
+        .trangchu {
+            height: 550px;
+            padding: 80px 7%;
+            display:block;
+            justify-self: space-between;
+            display: grid;
+            align-items: center;
+            gap: 50px;
+        }
+        .trangchu h1 {
+            font-size: 60px;
+            line-height: 1.1;
+            color: #0f172a;
+            margin: 15px 0;
+        }
+        .trangchu h1 span {
+            color: #2563eb;
+        }
+        .trangchu p {
+            font-size: 19px;
+            color: #475569;
+            width: 650px;
+        }   
+        .form-col {
+        width: 300px;
+        }
+
+        .form-col h2 {
+            text-align: center;
+            color: #0f172a;
+            font-size: 20px;
+            margin: 0 0 16px 0;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .form-group label {
+            width: 85px;
+            font-size: 14px;
+            color: #1e293b;
+            font-weight: 600;
+        }
+
+        .form-group input {
+            flex: 1;
+            padding: 7px 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            background-color: #ffffff;
+            font-size: 13px;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 4px rgba(59, 130, 246, 0.3);
+        }
+        footer {
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="tieude">
+        TIN HỌC <span>VĂN PHÒNG</span>
+    </div>
+    <nav>
+        <a href="#">Đăng nhập</a>
+        <a href="#">Bài học</a>
+        <a href="#">Lý thuyết</a>
+        <a href="#">Hình ảnh</a>
+        <a href="#">Video</a>
+        <a href="#">Bài tập</a>
+    </nav>
+</header>
+<section class="trangchu" id="trangchu">
+    <table>
+        <tr>
+            <td>     
+            <div>
+                <p>Tin Học Thông Tin</p>
+                <h1>
+                    Học <span>TIN HỌC</span>
+                    <br>
+                    thật dễ dàng
+                </h1>
+                <p>
+                    Tin học văn phòng dành cho học sinh,
+                    sinh viên. Học từ cơ bản đến nâng cao
+                    thông qua lí thuyết và bài tập.
+                </p>
+            </div>
+            </td>
+            <td>
+            <div class="form-col">
+                <h2>Đăng Nhập Thông Tin</h2>
+                <form action="../baihoc.html" method="GET">
+                    <div class="form-group">
+                    <label for="tk" >Tài khoản:</label>
+                    <input type="text" id="tk" required placeholder="Nhập tài khoản...">
+                    </div>
+                    <div class="form-group">
+                    <label for="mk" >Mật khẩu:</label>
+                    <input type="password" id= required placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="btn-submit">Đăng Nhập Ngay</button>
+                </form>
+            </div>
+            </td>
+        </tr>
+    </table>
+</section>
+<footer>
+    <div>
+        Thông tin liên hệ : Nguyễn Thanh Thái 
+        <br>SĐT : 0345649219
+        <br>Địa chỉ : Ấp Tân Thạnh, Xã tân Long, Tỉnh Đồng tháp
+
+    </div>
+    <p>
+        Phát triển bởi <a href="">Công Ty trách nhiệm hữu hạn</a>
+    </p>
+</footer>
+</body>
+</html>
