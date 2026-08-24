@@ -39,9 +39,11 @@
         nav {
             display: flex;
             gap: 20px;
+            background-color: white;
+            box-shadow: 2px 5px 10px gray;
         }
         nav a {
-            color: white;
+            color: black;
             text-decoration: none;
             font-weight: bold;
         }
@@ -104,7 +106,11 @@
             font-size: 13px;
             outline: none;
         }
-
+        img{
+            width: 500px;
+            height: auto;
+            margin: 0;
+        }
         .form-group input:focus {
             border-color: #3b82f6;
             box-shadow: 0 0 4px rgba(59, 130, 246, 0.3);
@@ -124,19 +130,19 @@
     <div class="tieude">
         TIN HỌC <span>VĂN PHÒNG</span>
     </div>
-    <nav>
-        <a href="#">Đăng nhập</a>
-        <a href="#">Bài học</a>
-        <a href="#">Lý thuyết</a>
-        <a href="#">Hình ảnh</a>
-        <a href="#">Video</a>
-        <a href="#">Bài tập</a>
-    </nav>
 </header>
-<section class="trangchu" id="trangchu">
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="../baihoc.html">Bài học</a>
+        <a href="../lythuyet.html">Lý thuyết</a>
+        <a href="../hinhanh.html">Hình ảnh</a>
+        <a href="../vide.html">Video</a>
+        <a href="../baitap.html">Bài tập</a>
+    </nav>
+<section class="trangchu" id="trangchu">    
     <table>
         <tr>
-            <td>     
+            <td>
             <div>
                 <p>Tin Học Thông Tin</p>
                 <h1>
@@ -152,20 +158,7 @@
             </div>
             </td>
             <td>
-            <div class="form-col">
-                <h2>Đăng Nhập Thông Tin</h2>
-                <form action="./baihoc.html" method="GET">
-                    <div class="form-group">
-                    <label for="tk" >Tài khoản:</label>
-                    <input type="text" id="tk" required placeholder="Nhập tài khoản...">
-                    </div>
-                    <div class="form-group">
-                    <label for="mk" >Mật khẩu:</label>
-                    <input type="password" id="mk" required placeholder="••••••••">
-                    </div>
-                    <button type="submit" class="btn-submit">Đăng Nhập Ngay</button>
-                </form>
-            </div>
+                <img src="../img/anh11.png" alt="">
             </td>
         </tr>
     </table>
